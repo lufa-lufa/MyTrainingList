@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    -webkit-user-select: none;
+    background: #B2BEBF;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #3B3936;
+}
+
+header{
+    background: #889C9B;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    font-size: 16px;
+}
+
+.menu-header{
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    gap: 2rem;
+    text-align: end;
+    flex-direction: column;
+}
+
+.active{
+    left: 0;
+}
+
+.hamburguer{
+    z-index: 2;
+    cursor: pointer;
+}
+
+.barra{
+    background: #000;
+    display: block;
+    width: 3rem;
+    height: .2rem;
+    margin: .4rem;
+    border-radius: 1px;
+    transition: .7s;
+}
+
+#meio{
+    transition: .2s;
+}
+
+.hamburguer.active .barra:first-child{
+    transform: translateY(12px) rotate(360deg) rotate(45deg);
+}
+
+.hamburguer.active .barra:nth-child(2){
+    opacity: 0;
+}
+
+.hamburguer.active .barra:last-child{
+    transform: translateY(-12px) rotate(-360deg) rotate(-45deg);
+}
+
+main{
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #B2BEBF;
+    box-shadow: 0 0 5px #0000009d;
+    z-index: 0;
+    padding: 20px;
+    gap: 20px;
+}
+
+section{
+    background: #D9D9D9;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+summary{
+    padding: 30px;
+}
+
+article{
+    background: #D9D9D9;
+    border: 20px solid #889C9B;
+    width: 100%;
+    padding: 20px;
+    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+article img{
+    width: 80px;
+    height: 80px;
+    box-shadow: 0 0 4px #0000008f;
+}
+
+article p{
+    padding: 20px;
+}
+
+.btn{
+    position: relative;
+    padding: 20px;
+}
+
+.btn input{
+    width: 60px;
+    height: 40px;
+    font-size: 18px;
+    background: #486966;
+    color: #D9D9D9;
+    border: none;
+    box-shadow: 0 0 1px #0000009d;
+}
+
+footer{
+    background: #486966;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    padding: 25px;
+    height: 23vh;
+} 
+
+footer a{
+    padding: 0 10px;
+}
+
+footer img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
