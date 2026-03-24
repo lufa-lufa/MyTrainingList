@@ -57,6 +57,16 @@ input[name=cadastrar]{
     cursor: pointer;
     background: #486966;
     color: #D9D9D9;
+    transition: .8s;
+    box-shadow: 0 0 2px #D9D9D9, 0 0 8px #486966;
+    font-weight: 500;
+}
+
+input[name=logar]:hover,
+input[name=cadastrar]:hover{
+    background: #D9D9D9;
+    color: #486966;
+    box-shadow: 0 0 2px #354e4c, 0 0 8px #405e5b, 0 0 12px #415f5d, 0 0 16px #486966;
 }
 
 section p{
